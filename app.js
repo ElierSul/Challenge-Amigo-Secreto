@@ -6,18 +6,21 @@ function agregarAmigo() {
 
     //Este if sirve para evitar ingresar valores vacios
     if (nombreAmigo.trim() === "") {
-        alert('Por favor ingresa un nombre correcto');
+        alert('Por favor inserte un nombre');
         return;
     }
 
+    //agregamos el nombre a la lista
     listaAmigosSecretos.push(nombreAmigo);
     mostrarAmigos();
 
-    //limpiamos el input despues de agregar a cada uno
+    //limpiamos el input despues de agregar un amigo
     document.getElementById('amigo').value = "";
 }
 
 function mostrarAmigos() {
+
+    //se limpia la lista antes de volver a mostrarla
     const ul = document.getElementById('listaAmigos');
     ul.innerHTML = "";
 
@@ -27,4 +30,21 @@ function mostrarAmigos() {
         ul.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    //validamos que la lista no este vacia
+    if (listaAmigosSecretos.length === 0) {
+        alert('Ingresa algunos amigos para sortear');
+        return;
+    }else{
+        const seleccionarAmigo = Math.floor(Math.random() * listaAmigosSecretos.length);
+        const amigoSecreto = listaAmigosSecretos[seleccionarAmigo];
+        console.log(seleccionarAmigo);
+
+        document.getElementById('resultado').innerHTML = `<li>${amigoSecreto}</li>`;
+    }
+
+    
+}
+
 
