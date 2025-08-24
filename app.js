@@ -1,5 +1,6 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let listaAmigosSecretos = [];
+let listaAmigosSorteados = [];
 
 function agregarAmigo() {
     let nombreAmigo = document.getElementById('amigo').value;
@@ -19,7 +20,6 @@ function agregarAmigo() {
 }
 
 function mostrarAmigos() {
-
     //se limpia la lista antes de volver a mostrarla
     const ul = document.getElementById('listaAmigos');
     ul.innerHTML = "";
@@ -36,15 +36,35 @@ function sortearAmigo() {
     if (listaAmigosSecretos.length === 0) {
         alert('Ingresa algunos amigos para sortear');
         return;
-    }else{
-        const seleccionarAmigo = Math.floor(Math.random() * listaAmigosSecretos.length);
-        const amigoSecreto = listaAmigosSecretos[seleccionarAmigo];
-        console.log(seleccionarAmigo);
-
-        document.getElementById('resultado').innerHTML = `<li>${amigoSecreto}</li>`;
     }
 
+    //validamos que aun no se hayan sorteado todos los amigos
+    if (listaAmigosSorteados.length === listaAmigosSecretos.length) {
+        alert('Ya se han sorteado todos los amigos. Se reiniciará la lista.');
+        //vaciamos las dos listas
+        listaAmigosSorteados = [];
+        listaAmigosSecretos = [];
+        ////limpiar resultados mostrados
+        document.getElementById('resultado').innerHTML = "";
+        document.getElementById('listaAmigos').innerHTML = "";
+        return;
+    }
+
+    let seleccionarAmigo;
+    //seleccionamos un indice aleatorio y se repite hasta que salga un indice "amigo" no sorteado
+    do {
+        seleccionarAmigo = Math.floor(Math.random() * listaAmigosSecretos.length);
+    } while (listaAmigosSorteados.includes(seleccionarAmigo));
+
+    //agregamos a la lista de amigos sorteados
+    listaAmigosSorteados.push(seleccionarAmigo);
+
+    //obtenemos el nombre del amigo
+    const amigoSecreto = listaAmigosSecretos[seleccionarAmigo];
     
-}
+    //mostramos el resultado en pantalla
+    document.getElementById('resultado').innerHTML = `<li>${amigoSecreto}</li>`;
+}    
+
 
 
