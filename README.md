@@ -1,4 +1,4 @@
-![Portada del proyecto](assets/portada_proyecto.mp4)
+![Portada del Proyecto](assets/portada_proyecto.gif)
 
 ![Status](https://img.shields.io/badge/status-finalizado-green)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
