@@ -15,10 +15,20 @@ Primer challenge del curso de Oracle Next Education con Alura Latam. El challeng
 # :hammer:Funcionalidades del Proyecto
 
 - `Funcionalidad 1`: se almacenan los nombres de los amigos en un Array 
+
 ![Agregar amigos a la lista](assets/agregarAmigos.png)
+
 - `Funcionalidad 2`: De forma aleatoria se selecciona un amigo, el sistema esta configurado para nunca mostrar el mismo amigo dos veces en el mismo juego
+
 ![Sortear amigo](assets/seleccionar_amigo.png)
+
 - `Funcionalidad 3`: Una vez se han sorteado todos los amigos el juego se resetea, para agregar nuevos amigos a la lista y realizar un nuevo sorteo
+
 ![Reiniciar lista](assets/reiniciar_lista.png)
+
+# Autor
+
+| [<img src="https://avatars.githubusercontent.com/u/37356058?v=4" width=115><br><sub>Elier Antonio Sulbará Rodríguez</sub>](https://github.com/ElierSul) 
+
 
 
