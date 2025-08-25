@@ -28,7 +28,7 @@ Primer challenge del curso de Oracle Next Education con Alura Latam. El challeng
 
 # Autor
 
-| [<img src="https://github.com/account" width=115><br><sub>Elier Antonio Sulbará Rodríguez</sub>](https://github.com/ElierSul) 
+| [<img src="https://media.licdn.com/dms/image/v2/D4E03AQEaJfZtmqK4bg/profile-displayphoto-scale_200_200/B4EZjeltqKGcAY-/0/1756081092047?e=1758758400&v=beta&t=HslPduSuYAA59mhjemuxLrorHibXkMxXgS9HWlpUOdE" width=115><br><sub>Elier Antonio Sulbará Rodríguez</sub>](https://github.com/ElierSul) 
 
 
 
