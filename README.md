@@ -28,7 +28,7 @@ Primer challenge del curso de Oracle Next Education con Alura Latam. El challeng
 
 # Autor
 
-| [<img src="challenge-amigo-secreto_esp-main/assets/Autor.png" width=115><br><sub>Elier Antonio Sulbará Rodríguez</sub>](https://github.com/ElierSul) 
+| [<img src="https://github.com/account" width=115><br><sub>Elier Antonio Sulbará Rodríguez</sub>](https://github.com/ElierSul) 
 
 
 
